@@ -58,7 +58,7 @@
       </section>
       <section class="section-adventages">
         <div class="container">
-          <h2 class="adventages-title-section">Advantages</h2>
+          <h2 class="adventages-title-section visibility-hidden">Advantages</h2>
           <ul class="adventages-list">
             <li class="adventages-item">
               <div class="item-box">
@@ -462,9 +462,27 @@
             </li>
           </ul>
         </div>
+        <div class="subscraib">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <div class="footer-subscribe-box">
+            <label for="footer-email"></label>
+            <input
+              type="email"
+              name="footer-email"
+              class="footer-email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-btn">
+              Subscribe<svg class="icon-vector" width="24" height="20">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close">
           <svg class="icon-close" width="8" height="8">
@@ -523,6 +541,22 @@
             id="comments-modal"
             placeholder="Text input"
           ></textarea>
+          <div class="field-policy">
+            <input
+              type="checkbox"
+              class="input-policy visibility-hidden"
+              name="policy"
+              id="policy"
+              value="true"
+            />
+            <label for="policy" class="label-policy"
+              ><span
+                ><svg class="modal-icon-check" width="8" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="linc-policy">Privacy Policy</a></label
+            >
+          </div>
           <button type="submit" class="bt-submit">Send</button>
         </form>
       </div>
