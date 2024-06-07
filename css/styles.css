@@ -48,6 +48,10 @@ img {
   display: block;
 }
 
+input {
+  font-family: inherit;
+}
+
 .container-header {
   justify-content: space-between;
   display: flex;
@@ -474,9 +478,9 @@ img {
 }
 
 .is-open {
-  /* opacity: 1;
+  opacity: 1;
   visibility: visible;
-  pointer-events: auto; */
+  pointer-events: auto;
 }
 
 .modal {
@@ -493,6 +497,9 @@ img {
   padding: 24px;
 }
 
+.modal-form {
+}
+
 .modal-close {
   border-radius: 100%;
   width: 24px;
@@ -504,10 +511,20 @@ img {
   margin-left: auto;
   margin-bottom: 24px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover {
+  background-color: #404bbf;
+}
+
+.modal-close:hover .icon-close {
+  fill: #fff;
 }
 
 .icon-close {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -525,10 +542,13 @@ img {
   height: 40px;
   padding-left: 38px;
   outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover {
+.modal-input:hover,
+.modal-input:focus {
   border: 1px solid #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .modal-input:hover + .modal-icon {
@@ -572,6 +592,7 @@ img {
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field-user {
@@ -674,6 +695,11 @@ img {
   height: 40px;
   margin-right: 24px;
   background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 
 .footer-email::placeholder {
