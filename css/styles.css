@@ -691,6 +691,7 @@ input {
 }
 .form-subscribe {
   display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-title {
@@ -727,8 +728,6 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 16px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -738,10 +737,11 @@ input {
   color: #fff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
 }
 
 .icon-vector {
+  margin-left: 16px;
 }
